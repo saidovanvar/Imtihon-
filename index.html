@@ -9,28 +9,36 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<main>
-    <section class="flex flex-col items-center justify-center bg-[#F0F3F7]">
-        <div  class="">
-            <div class="flex flex-col items-center justify-center mt-[64px]">
-                <h2 class="font-bold text-3xl text-[#16191D]">Объявления</h2>
-                <p class="font-normal text-base text-center #8E9297 mt-[8px]">Вы можете найти все категории, которые вам нужны от покупателя</p>
-            </div>
-<div id="app" class="grid grid-cols-4 gap-5">
+
+<form id="form" class="grid grid-cols-2 bg-[#fff] shadow-lg shadow-cyan-200/200 gap-4 w-full">
+    <div class="flex items-center gap-2 w-full">
+        <input class="p-4 bg-[#fff] border-dashed border-2 border-sky-500 rounded-xl mt-10 drop-shadow-xl w-full" id="firstName" type="text" name="name" placeholder="firstName">
+    </div>
+    <div class="flex items-center gap-2 w-full">
+        <input class="p-4 bg-[#fff] border-dashed border-2 border-sky-500 rounded-xl mt-10 drop-shadow-xl w-full" id="lastName" type="text" name="name" placeholder="lastName">
+    </div>
+    <div class="flex items-center gap-2 w-full">
+        <input class="p-4 bg-[#fff] border-dashed border-2 border-sky-500 rounded-xl mt-10 drop-shadow-xl w-full" id="phoneNumber" type="text" name="name" placeholder="phoneNumber">
+    </div>
+    <div class="flex items-center gap-2 w-full">
+        <input class="p-4 bg-[#fff] border-dashed border-2 border-sky-500 rounded-xl mt-10 drop-shadow-xl w-full" id="comment" type="text" name="name" placeholder="comment">
+    </div>
+    <div class="flex items-center gap-2 w-full">
+        <input class="p-4 bg-[#fff] border-dashed border-2 border-sky-500 rounded-xl mt-10 drop-shadow-xl w-full" id="categoryId" type="text" name="name" placeholder="categoryId">
+    </div>
+    <div class="flex items-center gap-2 w-full">
+        <input class="p-4 bg-[#fff] border-dashed border-2 border-sky-500 rounded-xl mt-10 drop-shadow-xl w-full" id="gender" type="text" name="name" placeholder="gender">
+    </div>
+    <div class="flex items-center gap-2 w-full">
+        <input class="p-4 bg-[#fff] border-dashed border-2 border-sky-500 rounded-xl mt-10 drop-shadow-xl w-full" id="dateOfBirth" type="datetime-local" name="name" placeholder="tugilgan sana">
+    </div>
+<div class="flex items-center gap-2 w-full">
+    <button type="submit" class="add h-[65px] rounded-xl mt-10 bg-blue-500 w-[200px] text-white" id="submit">+add</button>
+    <button type="submit" class="edit h-[65px] rounded-xl mt-10 bg-yellow-500 w-[100px] text-white" id="edit">✏️edit</button>
 
 </div>
-            <div  class="flex  justify-center mt-10">
-                <div id="button" class="border flex gap-2 border-2 border-[#D6D6D680] bg-[#EAEDF0] rounded-[100px] py-[11px] px-[25px]">
-                    <p>Загрузить больше</p>
-                    <img src="./img/Icon%20(3).svg" alt="scrole">
-                </div>
-                <div id="scrole">
-
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
+</form>
+<ul class="list  font-bold ml-10 gap-40"></ul>
 <script src="main.js"></script>
 </body>
 </html>
